@@ -19,7 +19,7 @@ Basic Usage
 
     import obd
 
-    connection = obd.OBD() # auto-connects to USB or RF port
+    connection = obd.Obd() # auto-connects to USB or RF port
 
     cmd = obd.commands.RPM # select an OBD command (sensor)
 
