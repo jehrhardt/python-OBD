@@ -6,7 +6,7 @@ from obd.decoders import noop
 
 
 def test_is_connected():
-	o = obd.OBD("/dev/null")
+	o = obd.Obd("/dev/null")
 	assert not o.is_connected()
 
 	# todo
@@ -14,7 +14,7 @@ def test_is_connected():
 
 def test_query():
 	# we don't need an actual serial connection
-	o = obd.OBD("/dev/null")
+	o = obd.Obd("/dev/null")
 	# forge our own command, to control the output
 	cmd = OBDCommand("", "", "01", "23", 2, noop)
 
