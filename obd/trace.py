@@ -30,7 +30,7 @@
 
 from async import Async
 
-def trace_obd:
+def trace_obd():
     conn = Async()
     watch_supported_commands(conn)
     conn.start()
